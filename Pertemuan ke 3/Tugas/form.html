@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Website Singaperbangsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Singaperbangsa</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="form-section">
+            <h2>Formulir Pendaftaran</h2>
+            <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+            <form>
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <hr>
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="laki" name="gender" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+
+                <hr>
+
+                <label>Hobi:</label>
+                <input type="checkbox" id="musik" name="hobi" value="Musik">
+                <label for="musik">Musik</label>
+                <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                <label for="olahraga">Olahraga</label>
+                <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                <label for="membaca">Membaca</label>
+
+                <hr>
+
+                <label for="kota">Pilih Kota:</label>
+                <select id="kota" name="kota">
+                    <option value="Karawang">Karawang</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="medan">Medan</option>
+                    <option value="semarang">Semarang</option>
+                    <option value="makassar">Makassar</option>
+                    <option value="palembang">Palembang</option>
+                    <option value="denpasar">Denpasar</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                    <option value="balikpapan">Balikpapan</option>
+                    <option value="lainnya">Kota yang tidak disebutkan</option>
+                </select>
+
+                <hr>
+                
+                <label for="pesan">Pesan Tambahan:</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan di sini..."></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+        </aside>
+    </div>
+</body>
+</html>
