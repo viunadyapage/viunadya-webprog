@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator PBW</title>
+</head>
+<body>
+    <h2>Kalkulator PBW</h2>
+    <input type="number" id="num1" placeholder="Angka pertama">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+    </select>
+    <input type="number" id="num2" placeholder="Angka kedua">
+    <button onclick="hitung()">Hitung</button>
+    <p>Hasil: <span id="hasil"></span></p>
+
+    <script>
+        function hitung() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let operator = document.getElementById("operator").value;
+            let hasil;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                hasil = "Masukkan angka yang valid!";
+            } else if (operator === "/" && num2 === 0) {
+                hasil = "Tidak bisa bagi 0";
+            } else {
+                hasil = eval(num1 + operator + num2);
+            }
+
+            document.getElementById("hasil").innerText = hasil;
+        }
+    </script>
+</body>
+</html>
